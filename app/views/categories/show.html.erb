@@ -1,0 +1,12 @@
+<h1>Categories#showdasdasds</h1>
+<p>Find me in app/views/categories/show.html.erb</p>
+
+<p>
+
+<% if current_user.present? %>
+  <%= link_to "Post a Question"%>
+<%end %>
+</p>
+<% @questions.each do |question| %>
+<%= link_to question.content %></br>
+<% end %>
